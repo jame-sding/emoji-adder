@@ -1,0 +1,9 @@
+I forgot to use the Model-View-Controller design, but this program still somewhat fits it.
+
+Adder, DictFileEditor, and Similarity Calc as the Model.
+AdderPane, EditorPane, and EmojiAdderGUI as a View-Controller fusion (their constructors mostly take care of the View, while their addActionListeners() or addListeners() methods take care most of the Controller). 
+
+This backup was for version 0.7
+There are still many classes and files (artifacts, I think they're called? not sure) that are left over from previous versions that aren't used anymore. Those files include: AdderController (when I used JavaFX), AdderProgram (JavaFX), Test (a sample Swing program from the Java tutorials), EmojiListFormatter, and EmojiTreeNode.
+
+In order to get the list of all emojis as well as their names, I found text files in some secluded corners of the internet that contained emojis with their names. Originally, I found a text file from one source that contained many extra things that I didn't want, so I downloaded it and created the program EmojiListFormatter to remove those extra things. Then, I found an even better text file with the twemoji shortnames, and I created the program TwemojiListFormatter to remove extra things from that text file. Both EmojiListFormatter and TwemojiListFormatter can be removed, but I left TwemojiListFormatter just in case I still needed it.
